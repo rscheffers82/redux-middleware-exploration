@@ -11,8 +11,8 @@ class UserList extends Component {
     return (
       <div className="card card-block">
         <h4 className="card-title">{user.name}</h4>
-        <p class="card-text">StateStreet</p>
-        <a className="btn btn-primary">Email</a>
+        <p class="card-text"><i>Company:</i> {user.company.name}</p>
+        <a href={'mailto:' + user.email} className="btn btn-primary">Email</a>
       </div>
     );
   }
