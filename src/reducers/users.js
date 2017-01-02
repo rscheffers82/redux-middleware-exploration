@@ -7,7 +7,7 @@ export default (state = [], action) => {
     case FETCH_USERS:
       return [
         ...state,
-        ...action.payload
+        ...action.payload.data
       ];
   }
 
